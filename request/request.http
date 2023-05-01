@@ -1,0 +1,18 @@
+//ctrl + alt + r
+@api = https://jsonplaceholder.typicode.com
+//extensiones .http o .rest
+### todas las publicaciones
+GET {{api}}/posts
+//variable @variable, interpretar con {{variable}} doble llaves
+
+### Obteniendo solo una publicacion
+GET https://jsonplaceholder.typicode.com/posts/2
+
+### API propia
+POST https://jsonplaceholder.typicode.com/posts/
+Content-Type: application/json
+
+{
+    "title": "Aprendiz",
+    "body": "Estoy aprendiendo"
+}
